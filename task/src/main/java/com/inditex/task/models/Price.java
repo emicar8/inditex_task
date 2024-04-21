@@ -1,4 +1,4 @@
-package com.inditex.task.model;
+package com.inditex.task.models;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -7,8 +7,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Entity
+@NoArgsConstructor
 @AllArgsConstructor
 @Getter
 public class Price {
