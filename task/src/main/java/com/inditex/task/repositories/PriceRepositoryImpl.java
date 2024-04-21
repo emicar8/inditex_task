@@ -2,7 +2,6 @@ package com.inditex.task.repositories;
 
 import java.time.LocalDateTime;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.inditex.task.models.Price;
@@ -14,7 +13,6 @@ public class PriceRepositoryImpl implements PriceRepository{
 
     private EntityManager entityManager;
 
-    @Autowired
     PriceRepositoryImpl(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
