@@ -3,9 +3,12 @@ package com.inditex.task.models;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+import com.inditex.task.models.builders.PriceBuilder;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -24,5 +27,9 @@ public class Price {
     private Long priority;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
+
+    public static PriceBuilder builder() {
+        return new PriceBuilder();
+    }
     
 }
